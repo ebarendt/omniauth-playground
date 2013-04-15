@@ -19,3 +19,5 @@ gem 'jquery-rails'
 
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.0.1'
+
+gem 'httparty', '~> 0.11.0'
