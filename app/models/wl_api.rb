@@ -13,7 +13,7 @@ class WlApi
   end
 
   def folder(folder_id)
-    HTTParty.get("#{BASE_URL}/#{folder_id}/files?access_token=#{token}")
+    HTTParty.get("#{BASE_URL}/#{folder_id}/files?access_token=#{token}")['data']
   end
 
   def thumbnail_url(file_id)
