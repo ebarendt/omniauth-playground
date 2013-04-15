@@ -71,7 +71,6 @@ GEM
     minitest (4.7.0)
     multi_json (1.7.2)
     multipart-post (1.2.0)
-    oauth (0.4.7)
     oauth2 (0.8.1)
       faraday (~> 0.8)
       httpauth (~> 0.1)
@@ -81,15 +80,9 @@ GEM
     omniauth (1.1.3)
       hashie (~> 1.2)
       rack
-    omniauth-oauth (1.0.1)
-      oauth
-      omniauth (~> 1.0)
     omniauth-oauth2 (1.1.1)
       oauth2 (~> 0.8.0)
       omniauth (~> 1.0)
-    omniauth-twitter (0.0.16)
-      multi_json (~> 1.3)
-      omniauth-oauth (~> 1.0)
     pg (0.15.0)
     polyglot (0.3.3)
     rack (1.5.2)
@@ -150,7 +143,6 @@ DEPENDENCIES
   jbuilder (~> 1.0.1)
   jquery-rails
   omniauth (~> 1.1.3)
-  omniauth-twitter (~> 0.0.16)
   omniauth-windowslive!
   pg
   rails (= 4.0.0.beta1)
