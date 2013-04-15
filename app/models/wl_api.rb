@@ -9,15 +9,21 @@ class WlApi
   end
 
   def albums
-    HTTParty.get("#{BASE_URL}/me/albums?access_token=#{token}")['data']
+    get('/me/albums')['data']
   end
 
   def folder(folder_id)
-    HTTParty.get("#{BASE_URL}/#{folder_id}/files?access_token=#{token}")['data']
+    get("/#{folder_id}/files")['data']
   end
 
   def thumbnail_url(file_id)
-    HTTParty.get("#{BASE_URL}/#{file_id}?access_token=#{token}")['images'][1]['source']
+    get("/#{file_id}")['images'][1]['source']
   end
+
+  private
+
+    def get(path)
+      HTTParty.get("#{BASE_URL}#{path}?access_token=#{token}")
+    end
 
 end
